@@ -1,0 +1,1410 @@
+/*! HTML5 Boilerplate v6.0.1 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+    color: black;
+    -webkit-text-stroke-color: #000000;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+    color: black;
+    -webkit-text-stroke-color: #000000;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+.gmnoprint,
+.gmnoscreen {
+    display: none !important;
+}
+
+img[src="https://maps.gstatic.com/mapfiles/api-3/images/google_white5.png"] {
+    display: none;
+}
+
+/* ==========================================================================
+   GENERAL STYLE
+   ========================================================================== */
+
+@font-face {
+    font-family: "GT Cinetype";
+    src: url(../fonts/GT-Cinetype-Mono.woff);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "GT Cinetype";
+    src: url(../fonts/GT-Cinetype-Bold.woff);
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: "GT Cinetype";
+    src: url(../fonts/GT-Cinetype-Regular.woff);
+    font-weight: 600;
+}
+
+html, body{
+    height: 100%;
+}
+
+html{
+    font-family: "GT Cinetype";
+    background-color: #000000;
+    color: #000000;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body{
+    display: flex;
+    padding-top: 0 !important;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    color: inherit;
+    text-decoration: inherit;
+}
+
+::selection {
+    background: rgba(0,0,0,0.99); /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+    background: rgba(0,0,0,0.99); /* Gecko Browsers */
+}
+
+/*
+    Stili di paragrafo
+*/
+
+h1{
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 9vw;
+    line-height: 8vw;
+    margin: 0;
+    -webkit-text-stroke-width: .6vw;
+    -webkit-text-stroke-color: #000000;
+}
+
+h1.small{
+    text-transform: none;
+}
+
+h2{
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 5vw;
+    line-height: 5vw;
+    margin: 0;
+    -webkit-text-stroke-width: .4vw;
+    -webkit-text-stroke-color: #000000;
+}
+
+h2.small{
+    font-size: 3vw;
+    line-height: 3vw;
+    margin: 0;
+    -webkit-text-stroke-width: .3vw;
+}
+
+p{
+    font-weight: 800;
+    font-size: 4vw;
+    line-height: 4vw;
+}
+
+.wpb_wrapper p{
+    margin: 2vw 0 !important;
+}
+
+p.small{
+    font-size: 3vw;
+    line-height: 3vw;
+}
+
+p.big{
+    font-size: 9vw;
+    line-height: 8vw;
+}
+
+p.service{
+    font-weight: 600;
+    font-size: 2.5vw;
+    line-height: 2.8vw;
+}
+
+h3{
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 5vw;
+    line-height: 5vw;
+    margin: 1vw 0;
+    -webkit-text-stroke-width: .3vw;
+    -webkit-text-stroke-color: #000000;
+}   /* reserved to menu */
+
+/* color helper */
+
+.white{
+    color: white;
+    -webkit-text-stroke-width: 0;
+    -webkit-text-stroke-color: white;
+}
+
+.tableDay .white{
+    -webkit-text-stroke-width: .2vw !important;
+}
+
+.red{
+    color: #ff0034;
+    -webkit-text-stroke-color: #ff0034;
+}
+
+/* special styles */
+
+footer p{
+    font-weight: 600;
+    font-size: 2.5vw;
+    line-height: 2.8vw;
+
+    color: white;
+    -webkit-text-stroke-width: 0;
+    -webkit-text-stroke-color: white;
+
+    column-count: 1;
+    -webkit-column-count: 1;
+}
+
+.tableDay .white{
+    -webkit-text-stroke-width: .1vw;
+}
+
+h2.small.white{
+    -webkit-text-stroke-width: .1vw;
+}
+
+h3.white{
+    -webkit-text-stroke-width: .1vw;
+}
+
+header .menu li a{
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 5vw;
+    line-height: 5vw;
+    color: white;
+    -webkit-text-stroke-width: .1vw;
+    -webkit-text-stroke-color: white;
+}   /* AKA h3.white */
+
+#content p a, .wpb_wrapper p a{
+    text-decoration: underline;
+}
+
+.alignRight{
+    /*text-align: right;*/
+    margin-top: 1vw;
+}
+
+.bold{
+    font-weight: 800 !important;
+}
+
+/*
+    Stili di blocco
+*/
+
+hr{
+    border:0;
+    border-top: 1vw solid black;
+    margin:0;
+    height:0;
+}
+
+/* lateral bar */
+.frameWrap{
+    width: 7vw;
+}
+    .frame{
+        background-color: white;
+        /*height: 100%;*/
+        min-height: 200vh;
+        height: 200vh;
+        width: 7vw;
+        position: fixed;
+        background-size: 7vw 79vw;
+        background-position: 0px 0px;
+        background-repeat: repeat-y;
+    }
+    #frameLeft{
+        left: 0;
+        background-image: url('../images/lateral_logo-left.svg');
+    }
+    #frameRight{
+        right: 0;
+        background-image: url('../images/lateral_logo-right.svg');
+    }
+
+/* master sections */
+
+#container{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 8vw;
+    box-sizing: border-box;
+    flex-grow: 1;
+    flex-shrink:1;
+}
+
+#page{
+    flex-grow: 1;
+    background-color: #ff0034;
+    box-sizing: border-box;
+}
+
+#content{
+    box-sizing: border-box;
+    margin: 2vw 0 3vw 0;
+}
+    #content #contentResizer{
+        max-height: 23.5vw;
+        overflow: hidden;
+    }
+
+#serviceButtons{
+    box-sizing: border-box;
+    /* temporary */
+    margin-bottom: 2vw;
+    margin-top: 1.5vw;
+}
+
+/* master grid */
+
+#gridHeading{
+    margin: 2vw 0;
+    border-top: 1vw solid black;
+}
+
+#grid{
+    width: 100%;
+}
+    .gridSizer {
+        width: 50%;
+    }
+    .gridBox{
+        box-sizing: border-box;
+        width: 100%;
+        margin: 0;
+        margin-bottom: 6vw;
+    }
+        .gridBox img {
+            width: 100%;
+            height: auto;
+        }
+
+/* footer section */
+
+footer{
+    padding: 2vw 0;
+    background-color: black;
+    box-sizing: border-box;
+}
+    footer .row{
+        display: flex;
+        justify-content: space-between;
+    }
+        footer .column{
+            width: calc(50% - .5vw);
+        }
+            footer .columnSub{
+                margin-bottom: 2.5vw;
+            }
+            footer .columnSub:last-of-type{
+                margin-bottom: 0;
+            }
+
+#menuOpen h3, #menuClose h3{
+    margin-left: -20px;
+}
+
+#menuOpen{
+    position: fixed;
+    top: 0;
+    z-index: 4;
+    background-color: #ff0033;
+    width: calc(100% - 14vw);
+    overflow: hidden;
+    white-space:nowrap;
+    border-bottom: 1vw solid black;
+    cursor: pointer;
+}
+
+footer img{
+    width: 100% !important;
+    height: auto;
+    margin-top: 1.5vw;
+}
+
+/* master elements */
+
+.button{
+    box-sizing: border-box;
+    border: 1vw solid black;
+    margin-bottom: 1vw;
+    padding: .2vw .5vw;
+}   /* bottoni standard */
+
+.redirect{
+    display: inline-block;
+    border: .3vw solid white;
+    padding: .7vw;
+}
+    .redirect h2{
+        box-sizing: border-box;
+    }   /* bottoni bianchi */
+
+.attachment-post-thumbnail{
+    width: 100%;
+    height: auto;
+}
+
+#showMore{
+    display: none;
+}
+
+/* master header */
+
+header{
+    z-index: 10;
+    display: none;
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    background-color: black;
+    flex-direction: column;
+}
+    #menuClose{
+        width: 100%;
+        height: 7vw;
+        white-space: nowrap;
+        border-bottom: .6vw solid white;
+        cursor: pointer;
+    }
+    header .menu-primary-menu-container{
+        flex-grow: 1;
+        display: flex;
+    }
+        header ul.menu{
+            width: 100%;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+            header .menu li{
+                flex: 1;
+                justify-content: center;
+                align-items: center;
+                border-bottom: .7vw solid white;
+
+                display: none;
+            }
+            header .menu li:last-child{
+                border: none !important;
+            }
+                header .menu li a{
+                    height: 100%;
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+    #menuLanguage{
+        width: 100%;
+        height: 7vw;
+        white-space: nowrap;
+        cursor: pointer;
+        background: white;
+        border-top: .7vw solid black;
+    }
+
+/* pagination details */
+
+.padded{
+    padding-left: 2vw !important;
+    padding-right: 2vw !important;
+    box-sizing: border-box !important;
+}
+
+.paddedGrid{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    box-sizing: border-box !important;
+}
+
+.paddedResponsive{
+    padding-left: 2vw !important;
+    padding-right: 2vw !important;
+    box-sizing: border-box !important;
+}
+
+.singleColumn{
+    column-count: inherit !important;
+}
+
+.doubleColumn{
+    column-count: 2 !important;
+    column-gap: 1vw;
+}
+
+/* ==========================================================================
+HOME STYLE
+========================================================================== */
+
+#splash{
+    height: calc(100vh - 7.7vw);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    box-sizing: border-box;
+}
+    #splashDesktop{
+        position: absolute;
+        z-index: 3;
+        width: 80vw;
+        height: 80%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin: auto;
+        top: 0; bottom: 0; left: 0; right: 0;
+        display: none;
+        box-sizing: border-box;
+    }
+    #splashMobile{
+        padding: 1vw;
+    }
+    .splashMobileElement{
+        width: 100%;
+        max-width: 100%;
+    }
+
+#buttons{
+    display: flex;
+    flex-direction: column;
+    margin: 2vw 0;
+    box-sizing: border-box;
+}
+    #buttons a{
+        display: block;
+    }
+
+#featured{
+    margin-bottom: 2vw;
+    margin-top: 4vw;
+    box-sizing: border-box;
+    border-top: 1vw solid black;
+}   /* molto simile a standard grid, ma meglio lasciarlo cosi */
+    #featuredCaption{
+        width: 70%;
+        margin: auto;
+        margin-bottom: 2vw;
+        margin-top: 1vw;
+        text-align: center;
+    }
+        #featuredCaption p{
+            margin-top: .5vw;
+        }
+    #featuredGrid{
+        display: flex;
+        justify-content: space-between;
+    }
+        #featuredGrid .featuredElement{
+            width: calc(50% - .5vw);
+        }
+
+/* ==========================================================================
+SINGLE ELEMENT STYLE
+========================================================================== */
+
+#introImage{
+    width: 100%;
+    height: auto;
+}
+
+#map{
+    width: 100%;
+    height: 50vh;
+}
+
+#courtesyCaption{
+    padding-top: .3vw;
+    padding-bottom: .3vw;
+    background: black;
+}
+
+/* ==========================================================================
+CALENDAR STYLE
+========================================================================== */
+
+/* grid calendario */
+
+#calendar{
+    margin-top: 6vw;
+    margin-bottom: 4vw;
+}
+    #calendarHeadingDays{
+        display: flex;
+    }
+        .headingDay{
+            flex: 1;
+            text-align: center;
+        }
+    #calendarTable{
+        margin: 2vw 0;
+    }
+        .calendarWeek{
+            display: flex;
+        }
+            .tableDay{
+                flex: 1;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                height: auto;
+                margin: 1vw;
+            }
+                .tableDay h2{
+                    margin: auto;
+                    padding: .9vw;
+                    border: .7vw solid transparent;
+                    border-radius: 50%;
+                    line-height: 6vw;
+                }
+
+/* list eventi */
+
+#scheduleHeading{
+    margin: 2vw 0;
+    padding: .5vw 0;
+    background: black;
+}
+
+.eventBox{
+    margin-bottom: 4vw;
+}
+
+/* ==========================================================================
+SINGLE PAGE STYLE
+========================================================================== */
+
+.vc_row{
+    border-bottom: 1vw solid black;
+    margin: 0 !important;
+}
+.wpb_button, .wpb_content_element, ul.wpb_thumbnails-fluid>li {
+    margin: 0 !important;
+}
+    .vc_row:last-child {
+        border: 0;
+    }
+        .vc_column_container>.vc_column-inner {
+            box-sizing: border-box;
+            padding: 0 !important;
+            width: 100%;
+        }
+            .vc_column-inner p{
+                padding: 0 2vw !important;
+            }
+            .vc_column-inner h1{
+                padding: 0 2vw !important;
+            }
+
+.wpb_wrapper .vc_single_image-wrapper img{
+    width: 100% !important;
+    padding-bottom: 2vw !important;
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    -webkit-clip-path: inset(50%);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    -webkit-clip-path: none;
+    clip-path: none;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+
+@media only screen and (min-width: 1025px) {
+
+    /* ==========================================================================
+   GENERAL STYLE
+   ========================================================================== */
+
+    /*
+        paragraph style
+    */
+
+    h1{
+        font-size: 6vw;
+        line-height: 5.5vw;
+        -webkit-text-stroke-width: .4vw;
+    }
+
+    h2{
+        font-size: 3vw;
+        line-height: 3vw;
+        -webkit-text-stroke-width: .2vw;
+    }
+
+    h2.small{
+        font-size: 2vw;
+        line-height: 2vw;
+        -webkit-text-stroke-width: .2vw;
+    }
+
+    p{
+        font-size: 2.5vw;
+        line-height: 2.7vw;
+    }
+
+    p.small{
+        font-size: 2vw;
+        line-height: 2vw;
+    }
+
+    p.big{
+        font-size: 6vw;
+        line-height: 5.5vw;
+    }
+
+    p.service{
+        font-size: 1.3vw;
+        line-height: 1.6vw;
+    }
+
+    h3{
+        font-size: 2.5vw;
+        line-height: 2.5vw;
+        margin: .5vw 0;
+        -webkit-text-stroke-width: .15vw;
+    }
+
+    /* special paragraph style */
+
+    footer p{
+        font-size: 1.3vw;
+        line-height: 1.6vw;
+    }
+
+    h2.small.white{}
+
+    h3.white{}
+
+    header .menu li a{
+        font-size: 2.5vw;
+        line-height: 2.5vw;
+    }
+
+    .tableDay h2{
+        font-size: 4vw;
+        line-height: 4vw;
+    }
+
+    .headingDay h2.small{
+        font-size: 2.5vw;
+        line-height: 2.5vw;
+    }
+
+    a.hoverable:hover{
+        display: inline-block !important;
+        background-color: black;
+        color: #ff0034 !important;
+        -webkit-text-stroke-color: #ff0034 !important;
+        -webkit-text-stroke-width: .3vw;
+    }
+
+    /*
+        master containers style
+    */
+
+    #container{
+        margin-top: 4.2vw;
+    }
+
+    #menuOpen{
+        width: calc(100% - 7vw);            /* change desktop */
+        border-bottom: .7vw solid black;
+        cursor: pointer;
+    }
+    #menuOpen:hover{
+        background: black !important;
+    }
+        #menuOpen:hover h3{
+            color: white;
+            -webkit-text-stroke-color: white;
+            -webkit-text-stroke-width: .1vw;
+        }
+
+    .frameWrap{
+        width: 3.5vw;
+    }
+        .frame{
+            width: 3.5vw;
+            background-size: 3.5vw 39vw;
+        }
+
+    #headingHome{
+        display: flex;
+    }
+        #headingHome h2{
+            text-align: center;
+        }
+
+    /*
+        master elements
+     */
+
+    hr{
+        border:0;
+        border-top: .7vw solid black;
+        margin:0;
+        height:0;
+    }
+
+    .button {
+        border: .7vw solid black;
+        flex-grow: 0;
+    }
+        .button:first-child{
+            margin-top: 0;
+        }
+        .button:last-child{
+            margin-bottom: 0;
+        }
+    .button:hover{
+        background: black;
+    }
+    .button:hover h1{
+        color: #ff0034;
+        -webkit-text-stroke-color: #ff0034;
+        -webkit-text-stroke-width: .3vw;
+    }
+    #serviceButtons{
+        box-sizing: border-box;
+        /* temporary */
+        margin-bottom: 2vw;
+    }
+    .redirect{
+        /* style */
+        border: .2vw solid white;
+        padding: .7vw;
+    }
+    .redirect:hover{
+        border: .2vw solid black;
+        background: black;
+    }
+    h2 .redirect{
+        margin-top: .5vw;
+    }
+
+    .padded{
+        padding-left: 1vw !important;
+        padding-right: 1vw !important;
+        box-sizing: border-box !important;
+    }
+
+    .paddedGrid{
+        padding-left: .5vw !important;
+        padding-right: .5vw !important;
+        box-sizing: border-box !important;
+    }
+
+    .paddedResponsive{
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        box-sizing: border-box !important;
+    }
+
+    #menuClose:hover{
+        background: white;
+        border-bottom: .6vw solid black;
+    }
+    #menuClose:hover h3{
+        color: black !important;
+        -webkit-text-stroke-width: .15vw !important;
+        -webkit-text-stroke-color: black;
+    }
+
+    #menuLanguage:hover{
+        background: black;
+        border-top: .7vw solid white;
+    }
+    #menuLanguage:hover h3{
+        color: white !important;
+        -webkit-text-stroke-width: .1vw;
+        -webkit-text-stroke-color: white;
+    }
+
+    #menuClose, #menuLanguage{
+        height: 3.5vw;
+    }
+
+    footer .rowSub{
+        display: flex;
+        justify-content: space-between;
+    }
+    footer .columnSub{
+        width: calc(50% - 1vw);
+        margin-bottom: 0;
+    }
+
+    footer p a:hover{
+        color: #ff0034;
+    }
+
+    footer img{
+        width: 60% !important;
+        height: auto;
+        margin-top: 1.5vw;
+    }
+
+    #content #contentResizer{
+        max-height: none;
+        overflow: hidden;
+
+        /* layout adaptations */
+        column-count: 2;
+        column-gap: 1vw;
+    }
+    #content p a:hover{
+        color: white;
+    }
+
+    header .menu li:hover {
+        background: white;
+    }
+    header .menu li:hover a {
+        color: black;
+        -webkit-text-stroke-width: .1vw;
+        -webkit-text-stroke-color: black;
+    }
+
+    /* ==========================================================================
+    NEW HOME STYLE
+    ========================================================================== */
+
+    #splash{
+        height: calc(100vh - 4.2vw);
+        background-size: cover;
+        background-position: center;
+        text-align: center;
+    }
+
+    #splashMobile{
+        display: none;
+    }
+    #splashDesktop{
+        display: block;
+    }
+
+    #buttons{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .column{
+        width: calc(50% - .5vw);
+        display: flex;
+        flex-direction: column;
+    }
+
+    .three{
+        flex-grow: 1;
+    }
+
+    #featured{
+        border: 0;
+    }
+
+    #featuredCaption{
+        width: 50%;
+        margin-top: 0;
+        margin-bottom: 2vw;
+    }
+
+    .featuredElement:hover{
+        background-color: black;
+    }
+    .featuredElement:hover .attachment-post-thumbnail{
+        opacity: 0;
+    }
+    .featuredElement:hover h2{
+        color: #ff0034;
+        -webkit-text-stroke-color: #ff0034;
+        -webkit-text-stroke-width: .2vw;
+    }
+    .featuredElement:hover p{
+        color: #ff0034;
+    }
+
+    /* ==========================================================================
+    NEW ARTISTS LOCATIONS STYLE
+    ========================================================================== */
+
+    .gridBox{
+        box-sizing: border-box;
+        width: calc(50% - 1.5vw);
+        margin: 0 .5vw;
+        margin-bottom: 2vw;
+    }
+    .gridBox:hover{
+        background: black;
+    }
+    .gridBox:hover h2{
+         color: #ff0034;
+         -webkit-text-stroke-color: #ff0034;
+         -webkit-text-stroke-width: .2vw;
+     }
+    .gridBox:hover h1{
+        color: #ff0034;
+        -webkit-text-stroke-color: #ff0034;
+        -webkit-text-stroke-width: .3vw;
+    }
+    .gridBox:hover p{
+        color: #ff0034;
+        -webkit-text-stroke-width: 0;
+    }
+    .gridBox:hover img{
+        opacity: 0;
+    }
+
+    #gridHeading{
+        margin: 1vw 0;
+        border-top: .7vw solid black;
+    }
+
+    /* ==========================================================================
+    CALENDAR STYLE
+    ========================================================================== */
+
+    .existDay{
+        cursor: pointer;
+    }
+    .tableDay h2{
+        line-height: 5vw;
+    }
+    .tableDay h2:hover{
+        border: .7vw solid black;
+    }
+
+    .eventBox{
+        margin-bottom: 2vw;
+    }
+
+    .eventBox:hover{
+        background: black;
+        color: #ff0034 !important;
+    }
+    .eventBox:hover h1{
+        -webkit-text-stroke-color: #ff0034;
+        -webkit-text-stroke-width: .3vw;
+    }
+    .eventBox:hover h2{
+        -webkit-text-stroke-color: #ff0034;
+        -webkit-text-stroke-width: .2vw;
+    }
+
+    /* ==========================================================================
+    VISUAL COMPOSER STYLE
+    ========================================================================== */
+
+    .vc_row{
+        border-bottom: .7vw solid black;
+        margin: 0 !important;
+    }
+
+    .vc_column_container>.vc_column-inner {
+        box-sizing: border-box;
+        padding: 0 !important;
+        width: 100%;
+    }
+        .vc_column-inner p{
+            padding: 0 1vw !important;
+        }
+        .vc_column-inner h1{
+            padding: 0 1vw !important;
+        }
+
+    .wpb_wrapper .vc_single_image-wrapper img{
+        width: 100% !important;
+        padding: 2vw 0 !important;
+    }
+}
+
+/* ==========================================================================
+    !! RESPONSIVE STROKE STYLE !! STROKE ONLY
+    ========================================================================== */
+
+/* Landscape */
+@media only screen
+and (orientation: landscape) {
+    #splashMobile{
+        display: none;
+    }
+    #splashDesktop{
+        display: block;
+    }
+}
+
+/* iphone 6 chrome, safari */
+@media only screen
+and (min-device-width: 375px)
+and (max-device-width: 667px)
+and (-webkit-min-device-pixel-ratio: 2) {
+    h1{
+        -webkit-text-stroke-width: 1.6vw;
+    }
+
+    h2{
+        -webkit-text-stroke-width: 1vw;
+    }
+
+    h2.small{
+        -webkit-text-stroke-width: .3vw;
+    }
+
+    h3{
+        -webkit-text-stroke-width: .7vw;
+    }   /* reserved to menu */
+
+    /* color helper */
+
+    .white{
+        -webkit-text-stroke-width: .2vw;
+    }
+
+    /* special styles */
+
+    h2.small.white{
+        -webkit-text-stroke-width: .5vw;
+    }
+
+    h3.white{
+        -webkit-text-stroke-width: .4vw;
+    }
+
+    header .menu li a{
+        -webkit-text-stroke-width: .4vw;
+    }   /* AKA h3.white */
+}
+
+/* iphone 7plus */
+@media only screen
+and (min-device-width : 414px)
+and (max-device-width : 736px) {
+  h1{
+      -webkit-text-stroke-width: .07em;
+  }
+
+  h2{
+      -webkit-text-stroke-width: .1em;
+  }
+
+  h2.small{
+      -webkit-text-stroke-width: .1em;
+  }
+
+  h3{
+      -webkit-text-stroke-width: .1em;
+  }   /* reserved to menu */
+
+  /* color helper */
+
+  .white{
+      -webkit-text-stroke-width: .07em;
+  }
+
+  /* special styles */
+
+  h2.small.white{
+      -webkit-text-stroke-width: .07em;
+  }
+
+  h3.white{
+      -webkit-text-stroke-width: .07em;
+  }
+
+  header .menu li a{
+      -webkit-text-stroke-width: .1em;
+  }   /* AKA h3.white */
+}
+
+/* ==========================================================================
+    PRINT STYLE
+    ========================================================================== */
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
