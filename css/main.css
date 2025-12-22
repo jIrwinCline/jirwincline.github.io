@@ -182,6 +182,7 @@ h1{
     margin: 0;
     -webkit-text-stroke-width: .6vw;
     -webkit-text-stroke-color: #000000;
+    letter-spacing: 2px;
 }
 
 h1.small{
@@ -572,8 +573,8 @@ HOME STYLE
     #splashDesktop{
         position: absolute;
         z-index: 3;
-        width: 80vw;
-        height: 80%;
+        width: 90vw;
+        height: 100%;
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
@@ -1408,3 +1409,25 @@ and (max-device-width : 736px) {
         page-break-after: avoid;
     }
 }
+
+/* ==========================================================================
+   Responsive tweaks: mobile h1 (less than 700px)
+   ========================================================================== */
+/* @media (max-width: 700px) {
+    
+    h1 {
+        font-size: 8vw;           
+        line-height: 7.5vw;
+        -webkit-text-stroke-width: 0.35vw; 
+        margin: 0.5rem 0;        
+        letter-spacing: 1px;
+        text-align: center;      
+        padding: 0 4vw;
+        word-break: break-word;
+    }
+
+    
+    h2 { font-size: 4vw; line-height: 4.5vw; }
+    p { font-size: 3.5vw; line-height: 4vw; }
+} */
+
