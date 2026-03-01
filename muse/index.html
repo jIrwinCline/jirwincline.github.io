@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Muse Application - Better Human</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Revisit-After" content="1 Day">
+    <meta name="robots" content="index,follow">
+
+    <link rel="manifest" href="https://bybetterhuman.com/wp-content/themes/betterhuman/site.webmanifest">
+    <link rel="apple-touch-icon" href="../images/icon.png">
+
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+
+    <script src="../js/modernizr-3.5.0.min.js"></script>
+    <script src="../js/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+    <script src="../js/plugins.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/masonry.pkgd.js"></script>
+
+    <link rel="stylesheet" href="../css/main.css">
+
+    <meta name="description" content="Apply to be a muse for Better Human projects. We're looking for creative, inspiring individuals.">
+    <link rel="canonical" href="https://bybetterhuman.com/muse/">
+
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Muse Application - Better Human">
+    <meta property="og:description" content="Apply to be a muse for Better Human projects.">
+    <meta property="og:url" content="https://bybetterhuman.com/muse/">
+    <meta property="og:site_name" content="Better Human">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png">
+    <link rel="shortcut icon" href="../images/favicon.ico">
+
+    <style>
+        .form-container {
+            background-color: #ff0034;
+            padding: 2vw;
+            margin: 2vw 0;
+        }
+
+        .form-group {
+            margin-bottom: 2vw;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: 800;
+            font-size: 3vw;
+            line-height: 3vw;
+            margin-bottom: 0.5vw;
+            color: #000;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 1vw;
+            font-family: "GT Cinetype";
+            font-size: 2.5vw;
+            border: 0.7vw solid #000;
+            background-color: #fff;
+            box-sizing: border-box;
+        }
+
+        .form-group textarea {
+            min-height: 20vw;
+            resize: vertical;
+        }
+
+        .submit-btn {
+            background-color: #000;
+            color: #ff0034;
+            border: 0.7vw solid #000;
+            padding: 1.5vw 3vw;
+            font-family: "GT Cinetype";
+            font-size: 4vw;
+            font-weight: 400;
+            text-transform: uppercase;
+            cursor: pointer;
+            -webkit-text-stroke-width: 0.3vw;
+            -webkit-text-stroke-color: #ff0034;
+        }
+
+        .submit-btn:hover {
+            background-color: #fff;
+            color: #000;
+            -webkit-text-stroke-color: #000;
+        }
+
+        .requirements-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .requirements-list li {
+            font-weight: 800;
+            font-size: 4vw;
+            line-height: 4.5vw;
+            margin-bottom: 1vw;
+            padding-left: 2vw;
+            position: relative;
+        }
+
+        .requirements-list li:before {
+            content: "→";
+            position: absolute;
+            left: 0;
+        }
+
+        .form-message {
+            display: none;
+            padding: 2vw;
+            margin-top: 2vw;
+            font-weight: 800;
+            font-size: 3vw;
+            line-height: 3.5vw;
+        }
+
+        .form-message.success {
+            background-color: #000;
+            color: #ff0034;
+        }
+
+        .form-message.error {
+            background-color: #000;
+            color: #fff;
+        }
+
+        @media only screen and (min-width: 1025px) {
+            .form-group label {
+                font-size: 2vw;
+                line-height: 2vw;
+            }
+
+            .form-group input,
+            .form-group textarea {
+                font-size: 1.5vw;
+                padding: 0.7vw;
+                border: 0.5vw solid #000;
+            }
+
+            .form-group textarea {
+                min-height: 15vw;
+            }
+
+            .submit-btn {
+                font-size: 2.5vw;
+                padding: 1vw 2vw;
+                border: 0.5vw solid #000;
+                -webkit-text-stroke-width: 0.2vw;
+            }
+
+            .requirements-list li {
+                font-size: 2.5vw;
+                line-height: 2.7vw;
+            }
+
+            .form-message {
+                font-size: 2vw;
+                line-height: 2.2vw;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <a href="/">
+        <div id="frameLeft" class="frame"></div>
+    </a>
+    <a href="/">
+        <div id="frameRight" class="frame"></div>
+    </a>
+
+    <div>
+        <div class="frameWrap"></div>
+    </div>
+
+    <div id="container">
+
+        <!-- menu open button -->
+        <div id="menuOpen">
+            <h3>MENU MENU MENU MENU MENU MENU MENU MENU MENU MENU MENU MENU MENU MENU MENU MENU MENU MENU MENU MENU MENU MENU MENU MENU MENU MENU MENU MENU MENU</h3>
+        </div>
+
+        <!-- menu content -->
+        <header>
+            <div id="menuClose">
+                <h3 class="white">CLOSE CLOSE CLOSE CLOSE CLOSE CLOSE CLOSE CLOSE CLOSE CLOSE CLOSE CLOSE CLOSE CLOSE CLOSE CLOSE CLOSE CLOSE CLOSE CLOSE CLOSE</h3>
+            </div>
+
+            <div class="menu-primary-menu-container">
+                <ul id="menu-primary-menu" class="menu">
+                    <li class="menu-item">
+                        <a href="/">Home</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="https://payhip.com/ByBetterHuman">Books</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="/business/">Business</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="https://chatgpt.com/g/g-6948f6a09ab0819191021c9e51fd1276-better-human-ai">Better Human AI (Beta)</a>
+                    </li>
+                    <li class="menu-item active">
+                        <a href="/muse/" aria-current="page">Muse</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="/about/">About</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="menuLanguage">
+                <a id="de" title="RISING" href="/">
+                    <h3>RISING RISING RISING RISING RISING RISING RISING RISING RISING RISING RISING RISING RISING RISING</h3>
+                </a>
+            </div>
+        </header>
+
+        <div id="page">
+
+            <!-- splash section -->
+            <section id="splash" style="background-image: url('../images/muse-hero.jpg');">
+                <div id="splashDesktop" style="margin-top: 90px;"></div>
+                <div id="splashMobile">
+                    <img src="../images/Untitled-1-02.svg" class="splashMobileElement">
+                    <img src="../images/Untitled-1-03.svg" class="splashMobileElement">
+                    <img src="../images/Untitled-1-01.svg" class="splashMobileElement">
+                </div>
+            </section>
+
+            <!-- heading section -->
+            <section id="headingHome" class="padded">
+                <h1>
+                    Become<br>
+                    A<br>
+                    Muse<br>
+                    For<br>
+                    Better<br>
+                    Human
+                </h1>
+                <h2>
+                    Application<br>
+                    Process<br>
+                    Step One<br>
+                    2026
+                </h2>
+            </section>
+
+            <!-- requirements section -->
+            <section id="content" class="padded">
+                <div id="contentResizer">
+                    <h2>What We're Looking For</h2>
+                    <ul class="requirements-list">
+                        <li>Latina</li>
+                        <li>Goth-esque aesthetic</li>
+                        <li>Tattoos</li>
+                        <li>2 piercings minimum</li>
+                        <li>Nice eyes</li>
+                        <li>Soft voice</li>
+                        <li>Aura of peace</li>
+                    </ul>
+                    <p style="margin-top: 2vw;">We're seeking creative, inspiring individuals to collaborate with Better Human on various projects including photography, video content, and creative direction.</p>
+                </div>
+            </section>
+
+            <!-- application form -->
+            <section class="padded">
+                <h2 style="margin-bottom: 2vw;">Application Form</h2>
+                
+                <form id="museForm" class="form-container">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="age">Age *</label>
+                        <input type="number" id="age" name="age" min="18" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="location">Location (City, State/Country) *</label>
+                        <input type="text" id="location" name="location" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="instagram">Instagram Handle</label>
+                        <input type="text" id="instagram" name="instagram" placeholder="@yourusername">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="social">Other Social Media Links</label>
+                        <input type="text" id="social" name="social" placeholder="TikTok, Twitter, etc.">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="photos">Photo Portfolio URL *</label>
+                        <input type="url" id="photos" name="photos" placeholder="https://..." required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="why">Why would you be a good muse for Better Human? *</label>
+                        <textarea id="why" name="why" required placeholder="Tell us about yourself, your creative vision, and what draws you to this opportunity..."></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <p class="small" style="font-size: 2vw; line-height: 2.2vw;">
+                            By submitting this form, you consent to Better Human storing your information for consideration as a muse for our projects.
+                        </p>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Submit Application</button>
+                </form>
+
+                <div id="formMessage" class="form-message"></div>
+            </section>
+
+        </div>
+
+        <!-- footer -->
+        <footer>
+            <div class="row padded">
+                <div class="column">
+                    <div class="rowSub">
+                        <div class="columnSub">
+                            <p class="service white singleColumn">
+                                Better Human<br>
+                                Becoming Better<br>
+                                10.–25.3.2026<br>
+                                <br>
+                                produced by:<br>
+                                Formacha Digital<br>
+                                Innstraße 23<br>
+                                betterhuman<br>
+                                <br>
+                                <a href="mailto:info@bybetterhuman.com">info@bybetterhuman.com</a><br>
+                                <a href="https://www.facebook.com/bybetterhuman/" target="_blank">Facebook</a><br>
+                                <a href="https://www.instagram.com/bybetterhuman/" target="_blank">Instagram</a><br>
+                                <a href="http://eepurl.com/dlqUv5" target="_blank">Newsletter</a><br>
+                            </p>
+                        </div>
+                        <div class="columnSub">
+                            <p class="service white singleColumn">
+                                <br>
+                                Design:<br>
+                                <a href="http://formacha.io/" target="_blank">Formacha Digital</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <p class="test service white singleColumn">Better Human is a modern self-mastery platform built to help people develop discipline, resilience, and clarity in an accelerating world—blending Stoic and Buddhist principles with practical systems, digital guides, and media that prepare you for the next stages of humanity.<br>
+                        >> <a href="/about/">About</a></p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <div>
+        <div class="frameWrap"></div>
+    </div>
+
+    <script>
+        // Menu functionality
+        $(document).ready(function () {
+            $('#menuOpen').click(function () {
+                $('header').css({ 'display': 'flex' });
+                $('header li').css({ 'display': 'flex' });
+                $('body').bind('touchmove', function (e) { e.preventDefault() });
+            });
+            $('#menuClose').click(function () {
+                $('header').css({ 'display': 'none' });
+                $('body').unbind('touchmove');
+            });
+        });
+
+        // Form submission
+        document.getElementById('museForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const formMessage = document.getElementById('formMessage');
+            const submitBtn = this.querySelector('.submit-btn');
+            
+            // Disable submit button
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Submitting...';
+            
+            // Collect form data
+            const formData = {
+                name: document.getElementById('name').value,
+                email: document.getElementById('email').value,
+                age: document.getElementById('age').value,
+                location: document.getElementById('location').value,
+                instagram: document.getElementById('instagram').value,
+                social: document.getElementById('social').value,
+                photos: document.getElementById('photos').value,
+                why: document.getElementById('why').value
+            };
+            
+            try {
+                // n8n production webhook endpoint
+                const response = await fetch('https://n8n.srv1228145.hstgr.cloud/webhook/muse-application', {
+                    method: 'POST',
+                    mode: 'cors',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(formData)
+                });
+                
+                // n8n webhooks may not return proper CORS headers, so we check if request went through
+                // If we get here without error, the request was sent successfully
+                formMessage.className = 'form-message success';
+                formMessage.textContent = 'Thank you! Your application has been submitted successfully. We\'ll be in touch soon.';
+                formMessage.style.display = 'block';
+                this.reset();
+                
+            } catch (error) {
+                console.error('Submission error:', error);
+                
+                // Even with CORS error, the data might have been sent
+                // Check n8n executions to verify
+                formMessage.className = 'form-message error';
+                formMessage.textContent = 'Your application may have been submitted, but we couldn\'t confirm. Please check your email or contact us at info@bybetterhuman.com to verify. Error: ' + error.message;
+                formMessage.style.display = 'block';
+            } finally {
+                submitBtn.disabled = false;
+                submitBtn.textContent = 'Submit Application';
+            }
+        });
+    </script>
+
+</body>
+
+</html>
